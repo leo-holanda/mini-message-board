@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Message Board</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      {% for message in messages %}
+        <div class="card">
+          <p class="card-message"> {{ message.text }}</p>
+          <div class="card-bottom">
+            <p class="card-author"> {{ message.user }} </p>
+            <p class="card-date"> {{ message.added }} </p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>

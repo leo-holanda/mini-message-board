@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.container{
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  width: 25%;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.card-author {
+  margin: 5px;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  float: left;
+}
+
+.card-date{
+  font-size: 1em;
+  margin: 5px;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-message {
+  margin: 20px;
+  font-weight: bold;
+  font-size: 3em;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  word-wrap: break-word;
+}
+
+.card-bottom{
+  display: inline;
+}
