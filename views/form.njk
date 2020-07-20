@@ -1,0 +1,17 @@
+<html lang="en">
+	{% include "header.njk" %}
+	<body>
+		<div class="container">
+			<form method="POST" action="/new">
+				<h1>Send your message!</h1>
+				<label for="name">Name</label><br>
+				<input type="text" id="name" name="name"><br>
+				
+				<label for="message">Message</label><br>
+				<textarea name="message"></textarea><br>
+		
+				<input class="submit" type="submit" value="Submit">
+			</form>    
+		</div>
+	</body>
+</html>

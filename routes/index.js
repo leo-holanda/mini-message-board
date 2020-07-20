@@ -19,4 +19,14 @@ router.get('/', function(req, res, next) {
   res.render('index', { messages: messages });
 });
 
+router.get('/new', function(req, res, next) {
+  res.render('form');
+});
+
+router.post('/new', function(req, res, next) {
+  messages.push({text: req.body.message, user: req.body.name, added: new Date().toLocaleString()});
+  res.redirect('/')
+});
+
+
 module.exports = router;
