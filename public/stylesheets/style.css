@@ -68,6 +68,11 @@ body {
 
 /* FORM */
 
+form {
+  padding: 25px;
+  border: 2px solid black;
+}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5em;
